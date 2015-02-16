@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+  <% @tops.each do |top| %>
+    <%= link_to book.title, book %>
+    <br>
+    <%= book.author %>
+    <br>
+    <%= book.status %>
+    <br>
+  <% end %>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
