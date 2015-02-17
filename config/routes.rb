@@ -1,48 +1,48 @@
-#           Prefix Verb   URI Pattern                              Controller#Action
-#            login GET    /login(.:format)                           session#new
-#          session POST   /session(.:format)                         session#create
-#                  DELETE /session(.:format)                         session#destroy
-#             root GET    /                                          users#index
-#     user_outfits GET    /users/:user_id/outfits(.:format)          outfits#index
-#                  POST   /users/:user_id/outfits(.:format)          outfits#create
-#  new_user_outfit GET    /users/:user_id/outfits/new(.:format)      outfits#new
-# edit_user_outfit GET    /users/:user_id/outfits/:id/edit(.:format) outfits#edit
-#      user_outfit GET    /users/:user_id/outfits/:id(.:format)      outfits#show
-#                  PATCH  /users/:user_id/outfits/:id(.:format)      outfits#update
-#                  PUT    /users/:user_id/outfits/:id(.:format)      outfits#update
-#                  DELETE /users/:user_id/outfits/:id(.:format)      outfits#destroy
-#        user_tops GET    /users/:user_id/tops(.:format)             tops#index
-#                  POST   /users/:user_id/tops(.:format)             tops#create
-#     new_user_top GET    /users/:user_id/tops/new(.:format)         tops#new
-#    edit_user_top GET    /users/:user_id/tops/:id/edit(.:format)    tops#edit
-#         user_top GET    /users/:user_id/tops/:id(.:format)         tops#show
-#                  PATCH  /users/:user_id/tops/:id(.:format)         tops#update
-#                  PUT    /users/:user_id/tops/:id(.:format)         tops#update
-#                  DELETE /users/:user_id/tops/:id(.:format)         tops#destroy
-#       user_pants GET    /users/:user_id/pants(.:format)            pants#index
-#                  POST   /users/:user_id/pants(.:format)            pants#create
-#    new_user_pant GET    /users/:user_id/pants/new(.:format)        pants#new
-#   edit_user_pant GET    /users/:user_id/pants/:id/edit(.:format)   pants#edit
-#        user_pant GET    /users/:user_id/pants/:id(.:format)        pants#show
-#                  PATCH  /users/:user_id/pants/:id(.:format)        pants#update
-#                  PUT    /users/:user_id/pants/:id(.:format)        pants#update
-#                  DELETE /users/:user_id/pants/:id(.:format)        pants#destroy
-#       user_shoes GET    /users/:user_id/shoes(.:format)            shoes#index
-#                  POST   /users/:user_id/shoes(.:format)            shoes#create
-#    new_user_shoe GET    /users/:user_id/shoes/new(.:format)        shoes#new
-#   edit_user_shoe GET    /users/:user_id/shoes/:id/edit(.:format)   shoes#edit
-#        user_shoe GET    /users/:user_id/shoes/:id(.:format)        shoes#show
-#                  PATCH  /users/:user_id/shoes/:id(.:format)        shoes#update
-#                  PUT    /users/:user_id/shoes/:id(.:format)        shoes#update
-#                  DELETE /users/:user_id/shoes/:id(.:format)        shoes#destroy
-#            users GET    /users(.:format)                           users#index
-#                  POST   /users(.:format)                           users#create
-#         new_user GET    /users/new(.:format)                       users#new
-#        edit_user GET    /users/:id/edit(.:format)                  users#edit
-#             user GET    /users/:id(.:format)                       users#show
-#                  PATCH  /users/:id(.:format)                       users#update
-#                  PUT    /users/:id(.:format)                       users#update
-#                  DELETE /users/:id(.:format)                       users#destroy
+# Prefix Verb   URI Pattern                 Controller#Action
+#       login GET    /login(.:format)            session#new
+#     session POST   /session(.:format)          session#create
+#             DELETE /session(.:format)          session#destroy
+#        root GET    /                           users#index
+#       users GET    /users(.:format)            users#index
+#             POST   /users(.:format)            users#create
+#    new_user GET    /users/new(.:format)        users#new
+#   edit_user GET    /users/:id/edit(.:format)   users#edit
+#        user GET    /users/:id(.:format)        users#show
+#             PATCH  /users/:id(.:format)        users#update
+#             PUT    /users/:id(.:format)        users#update
+#             DELETE /users/:id(.:format)        users#destroy
+#     outfits GET    /outfits(.:format)          users/outfits#index
+#             POST   /outfits(.:format)          users/outfits#create
+#  new_outfit GET    /outfits/new(.:format)      users/outfits#new
+# edit_outfit GET    /outfits/:id/edit(.:format) users/outfits#edit
+#      outfit GET    /outfits/:id(.:format)      users/outfits#show
+#             PATCH  /outfits/:id(.:format)      users/outfits#update
+#             PUT    /outfits/:id(.:format)      users/outfits#update
+#             DELETE /outfits/:id(.:format)      users/outfits#destroy
+#        tops GET    /tops(.:format)             users/tops#index
+#             POST   /tops(.:format)             users/tops#create
+#     new_top GET    /tops/new(.:format)         users/tops#new
+#    edit_top GET    /tops/:id/edit(.:format)    users/tops#edit
+#         top GET    /tops/:id(.:format)         users/tops#show
+#             PATCH  /tops/:id(.:format)         users/tops#update
+#             PUT    /tops/:id(.:format)         users/tops#update
+#             DELETE /tops/:id(.:format)         users/tops#destroy
+#       pants GET    /pants(.:format)            users/pants#index
+#             POST   /pants(.:format)            users/pants#create
+#    new_pant GET    /pants/new(.:format)        users/pants#new
+#   edit_pant GET    /pants/:id/edit(.:format)   users/pants#edit
+#        pant GET    /pants/:id(.:format)        users/pants#show
+#             PATCH  /pants/:id(.:format)        users/pants#update
+#             PUT    /pants/:id(.:format)        users/pants#update
+#             DELETE /pants/:id(.:format)        users/pants#destroy
+#       shoes GET    /shoes(.:format)            users/shoes#index
+#             POST   /shoes(.:format)            users/shoes#create
+#    new_shoe GET    /shoes/new(.:format)        users/shoes#new
+#   edit_shoe GET    /shoes/:id/edit(.:format)   users/shoes#edit
+#        shoe GET    /shoes/:id(.:format)        users/shoes#show
+#             PATCH  /shoes/:id(.:format)        users/shoes#update
+#             PUT    /shoes/:id(.:format)        users/shoes#update
+#             DELETE /shoes/:id(.:format)        users/shoes#destroy
 
 Rails.application.routes.draw do
 
@@ -51,9 +51,9 @@ Rails.application.routes.draw do
   delete '/session' => 'session#destroy'
 
   root 'users#index'
-  resources :users do
-    resources :outfits
-    resources :tops, :pants, :shoes
+  resources :users
+  scope module: 'users' do
+    resources :outfits, :tops, :pants, :shoes
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -64,7 +64,6 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

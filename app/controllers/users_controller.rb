@@ -4,22 +4,15 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    # @users = User.all
+    @users = User.all
+    # render "outfits/show"
   end
 
   # GET /users/1
   # GET /users/1.json
-  def wear
-    @outfit = Outfit.find_by(id: params[:id])
-  end
 
   def show
-    @top = Top.find_by(id: params[:id])
-    @pant = Pant.find_by(id: params[:id])
-    @shoe = Shoe.find_by(id: params[:id])
-    @tops = Top.all
-    @pants = Pant.all
-    @shoes = Shoe.all
+    @users = render "outfits/show"
   end
 
   # GET /users/new
@@ -29,6 +22,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    # render "outfits/edit"
   end
 
   # POST /users
