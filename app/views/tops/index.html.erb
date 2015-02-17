@@ -12,8 +12,8 @@
   <tbody>
     <% @tops.each do |top| %>
       <tr>
-        <!-- <td><%= top.image %></td> -->
-        <!-- <td><%= top.contents %></td> -->
+        <td><%= top.image %></td>
+        <td><%= top.contents %></td>
         <td><%= link_to 'Show', top %></td>
         <td><%= link_to 'Edit', edit_top_path(top) %></td>
         <td><%= link_to 'Destroy', top, method: :delete, data: { confirm: 'Are you sure?' } %></td>

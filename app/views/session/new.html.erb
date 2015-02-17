@@ -1,35 +1,11 @@
-<!-- <form action="/session" methond="POST">
-  <label for="email">Email:
-    <input type="email" name="email">
-  </label>
-  <label for="password">Password:
-    <input type="password" name="password">
-  </label>
+<h1>Login</h1>
+<form method="POST" action = "/session">
+  <label>Email</label>
+  <input type = "email" name = "email">
+  <br>
+  <label>Password</label>
+  <input type = "password" name = "password">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
-  <button>Sign In</button>
-</form> -->
-
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_area :email %>
-    <%= f.label :password %>
-    <%= f.text_area :password_digest %>
-  </div>
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  <br>
+  <button>Log in</button>
+</form>

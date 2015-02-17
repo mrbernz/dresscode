@@ -18,9 +18,10 @@ class SessionController < ApplicationController
   # end
 
   def create
-    user = User.find_by(email: params[:email])
-    if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
+    @user = User.find_by(email: params[:email])
+
+    if @user && @user.authenticate(params[:password])
+      session[:user_id] = @user.id
       redirect_to '/'
     else
       @error = true
@@ -30,5 +31,9 @@ class SessionController < ApplicationController
   def destroy
     reset_session
     redirect_to '/login'
+  end
+  private
+  def user_params
+    params.require(:user).permit(:email, :password)
   end
 end
