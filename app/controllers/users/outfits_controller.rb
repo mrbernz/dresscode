@@ -1,4 +1,4 @@
-class OutfitsController < ApplicationController
+class Users::OutfitsController < ApplicationController
   before_action :set_outfit, only: [:show, :edit, :update, :destroy]
 
   # GET /outfits
@@ -12,12 +12,12 @@ class OutfitsController < ApplicationController
   # GET /outfits/1
   # GET /outfits/1.json
   def show
-    @user = User.find_by(id: params[:user_id])
-    @outfit = @user.outfits.find(params[:id])
+    # @user = User.find_by(id: params[:id])
+    @outfit = Outfit.find_by(id: params[:id])
+    @user = @outfit.user
     # @outfits = Outfit.find_by(id: params[:id])
     end
     
-  end
 
   # GET /outfits/new
   def new
@@ -33,8 +33,9 @@ class OutfitsController < ApplicationController
   # POST /outfits
   # POST /outfits.json
   def create
-    @outfit = Outfit.new(outfit_params)
-
+    @user = User.find_by(id: params[:user_id])
+    @outfit = @user.outfits.create(outfit_params)
+    @outfit.user_id = @user.id
     respond_to do |format|
       if @outfit.save
         format.html { redirect_to @outfit, notice: 'Outfit was successfully created.' }
@@ -78,6 +79,6 @@ class OutfitsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def outfit_params
-      params[:outfit]
+      params.require(:outfit).permit(:top_id, :pant_id, :shoe_id, :count, :user_id)
     end
 end

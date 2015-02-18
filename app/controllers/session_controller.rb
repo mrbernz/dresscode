@@ -17,7 +17,8 @@ class SessionController < ApplicationController
   #   redirect_to '/login'
   # end
 def show
-  @user = User.find_by(id: params[:id])
+   @user = User.find_by(id: session[:user_id])
+   @outfit = @user.outfits.first
 end
 
   def create

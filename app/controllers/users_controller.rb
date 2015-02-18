@@ -12,19 +12,18 @@ class UsersController < ApplicationController
   # GET /users/1.json
 
   def show
+    @user = User.find_by(id: params[1])
   end
 
   # GET /users/new
   def new
     @user = User.new
-
-    # if @user
-    #   session[:user_id] = @user.id
-    #   redirect_to '/session'
-    # else
-    #   @error = true
-    #   render :new
-    # end
+    if @user
+      session[:user_id] = @user.id
+    else
+      @error = true
+      render :new
+    end
   end
 
   # GET /users/1/edit
@@ -35,10 +34,10 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    # binding.pry
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+    binding.pry
+        format.html { redirect_to '/session', notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
