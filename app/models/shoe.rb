@@ -1,4 +1,4 @@
 class Shoe < ActiveRecord::Base
-  belongs_to :users
+  belongs_to :user
   has_many :outfits
 end

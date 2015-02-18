@@ -1,6 +1,7 @@
 # Prefix Verb   URI Pattern                 Controller#Action
 #       login GET    /login(.:format)            session#new
 #     session POST   /session(.:format)          session#create
+#             GET    /session(.:format)          session#show
 #             DELETE /session(.:format)          session#destroy
 #        root GET    /                           users#index
 #       users GET    /users(.:format)            users#index
@@ -48,6 +49,7 @@ Rails.application.routes.draw do
 
   get '/login' => 'session#new'
   post '/session' => 'session#create'
+  get '/session' => 'session#show'
   delete '/session' => 'session#destroy'
 
   root 'users#index'

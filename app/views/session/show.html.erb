@@ -1,0 +1,15 @@
+<form action="/session" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
+  <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
+  <button>Logout</button>
+</form>
+<br>
+
+<h3>Hello</h3>
+
+<br>
+<h2>Welcome to</h2>
+<h1>DressCode</h1>
+<br>
+<%= link_to 'WHAT TO WEAR' %>
+<%= link_to 'CLOSET' %>

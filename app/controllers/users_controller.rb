@@ -17,18 +17,25 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
+
+    # if @user
+    #   session[:user_id] = @user.id
+    #   redirect_to '/session'
+    # else
+    #   @error = true
+    #   render :new
+    # end
   end
 
   # GET /users/1/edit
   def edit
-    # render "outfits/edit"
   end
 
   # POST /users
   # POST /users.json
   def create
     @user = User.new(user_params)
-    binding.pry
+    # binding.pry
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }

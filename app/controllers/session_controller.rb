@@ -16,13 +16,16 @@ class SessionController < ApplicationController
   #   reset_session
   #   redirect_to '/login'
   # end
+def show
+  @user = User.find_by(id: params[:id])
+end
 
   def create
     @user = User.find_by(email: params[:email])
 
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
-      redirect_to '/'
+      redirect_to '/session'
     else
       @error = true
       render :new
