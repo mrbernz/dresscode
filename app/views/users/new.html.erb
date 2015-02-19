@@ -1,5 +1,7 @@
   <div id="maincontainer">
-    <%= image_tag "background.png", class: "background" %>
+<div class="row">
+  <%= image_tag "background.png", class: "col-md-12 background" %>
+</div>
     <header>
       <div class="upperHeader">
         <div class="container">
@@ -9,8 +11,8 @@
         </div>
       </div>
     </header>
-    <%= form_for  @user  do |f| %>
-    <%= f.label :first_name, class: "create" %>
+    <%= form_for  @user class: "splashlink1" do |f| %>
+    <%= f.label :first_name %>
     <%= f.text_field :first_name %>
     <br>
     <%= f.label :last_name %>
