@@ -1,25 +1,19 @@
-<form action="/session" method="POST">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
-  <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
-  <!-- <button class="invarseColor">Logout</button> -->
-  <%= link_to "Logout", class: "invarseColor" %>
-</form>
-<br>
-
-  <div id="maincontainer">
-    <%= image_tag "background.png", class: "background" %>
-    <header>
-      <div class="upperHeader">
-        <div class="container">
-          <ul class="pull-right inline">
-            <%= link_to "Login", login_path, class: "invarseColor" %>
-            <li class="divider-vertical"></li>
-            <%= link_to "Creat an Account", new_user_path, class: "invarseColor" %>
-          </ul>
-        </div>
+<div id="maincontainer">
+  <%= image_tag "background.png", class: "background" %>
+  <header>
+    <div class="upperHeader">
+      <div class="container">
+        <ul class="pull-right inline">
+          <form action="/session" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
+            <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
+            <li><%= link_to "Logout", users_path, class: "invarseColor" %></li>
+          </form>
+        </ul>
       </div>
-    </header>
-    <%= button_to "WHAT TO WEAR", outfit_path(@outfit.id), class: "splashlink1", method: :get %>
-    <%= button_to "CLOSET", outfits_path(@outfit.id), class: "splashlink2", method: :get %>
-  </div>
+    </div>
+  </header>
+  <%= button_to "WHAT TO WEAR", outfit_path(@outfit.id), class: "splashlink1", method: :get %>
+  <%= button_to "CLOSET", outfits_path(@outfit.id), class: "splashlink2", method: :get %>
+</div>
 
