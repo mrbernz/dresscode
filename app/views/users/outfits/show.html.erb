@@ -1,9 +1,9 @@
-<%= image_tag(@outfit.top.image) %>
-<br>
-<!-- <%= image_tag(@outfit.pant.image) %>
- --><br>
-<!-- <%= image_tag(@outfit.shoe.image) %>
- --><br>
 
-<%= link_to 'Next', outfit_path(@outfit.id + 1) %>
+<%= image_tag(@outfit.top.image) %>
+<!-- <%= image_tag(@outfit.pant.image) %>
+ -->
+<!-- <%= image_tag(@outfit.shoe.image) %>
+ -->
+
+<%= link_to 'Next', outfit_path(@outfit.id) %>
 <%= link_to 'Wear It', session_path %>
