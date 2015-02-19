@@ -1,25 +1,24 @@
-<h1>Login</h1>
-<form method="POST" action = "/session">
-  <label>Email</label>
-  <input type = "email" name = "email">
-  <br>
-  <label>Password</label>
-  <input type = "password" name = "password">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
-  <br>
-  <button>Log in</button>
-</form>
 
-  <div id="maincontainer">
-    <%= image_tag "background.png", class: "background" %>
-    <header>
-      <div class="upperHeader">
-        <div class="container">
-          <ul class="pull-right inline">
-            <li class="divider-vertical"></li>
-          </ul>
-        </div>
+<div id="maincontainer">
+  <%= image_tag "background.png", class: "background" %>
+  <header>
+    <div class="upperHeader">
+      <div class="container">
+        <ul class="pull-right inline">
+          <li class="divider-vertical"></li>
+        </ul>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
+  <form method="POST" action = "/session">
+    <label>Email</label>
+    <input type = "email" name = "email">
+    <br>
+    <label>Password</label>
+    <input type = "password" name = "password">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
+    <br>
+    <button>Log in</button>
+  </form>
+</div>
 

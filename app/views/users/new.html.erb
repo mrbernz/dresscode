@@ -1,21 +1,3 @@
-<h1>New User</h1>
-
-<%= form_for @user do |f| %>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
-  <br>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
-  <br>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-  <br>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <br>
-  <%= f.submit %>
-<% end %>
-
   <div id="maincontainer">
     <%= image_tag "background.png", class: "background" %>
     <header>
@@ -27,4 +9,19 @@
         </div>
       </div>
     </header>
+    <%= form_for  @user, class: "create" do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+    <br>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <br>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    <br>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <br>
+    <%= f.submit %>
+    <% end %>
   </div>
