@@ -1,4 +1,4 @@
-class TopsController < ApplicationController
+class Users::TopsController < ApplicationController
   before_action :set_top, only: [:show, :edit, :update, :destroy]
 
   # GET /tops

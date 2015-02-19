@@ -1,4 +1,4 @@
-class PantsController < ApplicationController
+class Users::PantsController < ApplicationController
   before_action :set_pant, only: [:show, :edit, :update, :destroy]
 
   # GET /pants

@@ -1,6 +1,7 @@
-// Place all the styles related to the Users controller here.
+// Place all the styles related to the Session controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 html, 
 body {
   color:#777;
@@ -36,6 +37,7 @@ a.active:link, a.active:visited {
   background:#fff;
 }
 .background {
+  background-size: auto;
   top: 0;
   right: 0;
   bottom: 0;

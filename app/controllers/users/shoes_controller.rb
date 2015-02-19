@@ -1,4 +1,4 @@
-class ShoesController < ApplicationController
+class Users::ShoesController < ApplicationController
   before_action :set_shoe, only: [:show, :edit, :update, :destroy]
 
   # GET /shoes
