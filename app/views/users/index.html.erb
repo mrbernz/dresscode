@@ -1,5 +1,6 @@
 <div id="maincontainer">
-  <%= image_tag "background.png", class: "background" %>
+<div class="row">
+  <%= image_tag "background.png", class: "col-md-12 background" %>
   <header>
     <div class="upperHeader">
       <div class="container">
@@ -8,6 +9,7 @@
   </header>
   <%= button_to "LOGIN", login_path, class: "splashlink1", method: :get %>
   <%= button_to "CREAT AN ACCOUNT", new_user_path, class: "splashlink2", method: :get %>
+</div>
 </div>
 
 

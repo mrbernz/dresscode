@@ -1,6 +1,5 @@
-
 <div id="maincontainer">
-  <%= image_tag "background.png", class: "background" %>
+  <%= image_tag "background.png", class: "col-md-12 background" %>
   <header>
     <div class="upperHeader">
       <div class="container">
@@ -10,7 +9,7 @@
       </div>
     </div>
   </header>
-  <form method="POST" action = "/session">
+  <form class="login" method="POST" action = "/session">
     <label>Email</label>
     <input type = "email" name = "email">
     <br>

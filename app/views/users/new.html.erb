@@ -9,8 +9,8 @@
         </div>
       </div>
     </header>
-    <%= form_for  @user, class: "create" do |f| %>
-    <%= f.label :first_name %>
+    <%= form_for  @user  do |f| %>
+    <%= f.label :first_name, class: "create" %>
     <%= f.text_field :first_name %>
     <br>
     <%= f.label :last_name %>

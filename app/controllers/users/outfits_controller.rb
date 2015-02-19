@@ -13,7 +13,7 @@ class Users::OutfitsController < ApplicationController
   # GET /outfits/1.json
   def show
     # @user = User.find_by(id: params[:id])
-    @outfit = Outfit.find_by(id: params[:id])
+    @outfit = Outfit.find_by(id: rand(1..64))
     @user = @outfit.user
     # @outfits = Outfit.find_by(id: params[:id])
     end
