@@ -71,7 +71,7 @@ a.active:link, a.active:visited {
 .center-block {
   float: none;
 }
-.splashlink1 {
+.splashlink1, .login {
   width: 200px;
   height: 50px;
   color:#777;
@@ -79,7 +79,7 @@ a.active:link, a.active:visited {
   margin: 0 auto;
   margin-top: 320px;
 }
-.splashlink2 {
+.splashlink2, {
   width: 200px;
   height: 50px;
   color:#777;
@@ -92,7 +92,17 @@ a.active:link, a.active:visited {
   color:#f16325;
 }
 .login {
-  margin: 0 auto;
-  margin-top: 320px;
-  margin-left: 620px;
+  height: auto;
+  margin-top: center;
+  margin-left: center;
+}
+.login input{
+  height: auto;
+  line-height: 20px;
+  width: 200px;
+}
+.login button {
+  height: auto;
+  line-height: 20px;
+  width: 200px;
 }

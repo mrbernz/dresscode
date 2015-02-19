@@ -2,3 +2,152 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html, 
+body {
+  color:#777;
+  font-size: 12px;
+  line-height:auto;
+  font-family: 'Open Sans', Tahoma, Arial sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow: hidden;
+}
+a {
+  color:#f16325;
+}
+a:hover, a:active {
+  color:#f16325;
+  text-decoration:underline;
+}
+a.invarseColor:link, a.invarseColor:visited {
+  color:#666;
+}
+a.invarseColor:hover, a.invarseColor:active {
+  color:#f16325;
+  text-decoration:none;
+}
+a.active:link, a.active:visited {
+  color:#f16325;
+  cursor:default;
+}
+#mainContainer {
+  width:100%;
+  display: block;
+  margin:0 auto;
+  background:#fff;
+}
+.background {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.upperHeader {
+  padding-top:4px;
+}
+.upperHeader select.upper-nav {
+  display: none;
+}
+.upperHeader .inline {
+  margin:-2px 0 0 0;
+  padding:0;
+}
+.upperHeader .inline li {
+  margin:0 0 0 5px;
+  padding:0;
+  display: inline;
+}
+.upperHeader .inline li a {
+  font-size:11px;
+  font-weight:600;
+  line-height: 12px;
+  text-decoration: none;
+}
+.upperHeader > p, header p {
+  font-size:11px; 
+}
+.center-block {
+  float: none;
+}
+.buttonset {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.splashlink1 {
+  width: 200px;
+  height: 50px;
+  color:#777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 320px;
+}
+.splashlink2 {
+  width: 200px;
+  height: 50px;
+  color:#777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.splashlink1:hover,
+.splashlink2:hover {
+  color:#f16325;
+}
+.sidebar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  float: left;
+  position: absolute;
+}
+.sidebar ul {
+  margin-top: 50px;
+}
+.sidebar ul a li {
+  list-style: none;
+}
+.sidebarbg {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+/*.fitting {
+  width: 450px;
+  height: 600px;
+  border: 1px solid black;
+  margin-left: 150px;
+  position: absolute;
+}*/
+.modelwrap {
+  margin-left: 320px;
+  width: 250px;
+}
+.model {
+  z-index: 0;
+  margin-top: 40px;
+  height: 600px;
+}
+/*.modelwrap .top {
+  top: 0px;
+  z-index: 1;
+}
+.modelwrap .pant {
+  top: 0px;
+  z-index: 2;
+}
+.modelwrap .shoe {
+  top: 0px;
+  z-index: 3;
+}
+*/
+
+.topcont {
+  width: 200px;
+}

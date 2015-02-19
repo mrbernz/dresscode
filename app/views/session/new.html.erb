@@ -11,15 +11,13 @@
       </div>
     </div>
   </header>
-  <form class="splashlink1" method="POST" action = "/session">
-    <label>Email</label>
-    <input type = "email" name = "email">
-    <br>
-    <label>Password</label>
-    <input type = "password" name = "password">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
-    <br>
-    <button>Log in</button>
+  <div class="login">
+      <form method="POST" action = "/session">
+        <input type = "email" name = "email" placeholder="Email">
+        <input type = "password" name = "password" placeholder="Password">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>"><br>
+        <button class="button">Log in</button>
   </form>
+  </div>
 </div>
 
