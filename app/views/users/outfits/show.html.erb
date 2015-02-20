@@ -1,26 +1,40 @@
-<div class="sidebar">
-  <ul>
-    <%= link_to "Closet" %>
-  </ul>
-  <%= image_tag "sidebar.png", class: "sidebarbg" %>
-</div>
+<div id="maincontainer">
+  <div class="sidebar">
+    <ul>
+      <%= link_to "Closet", outfits_path %>
+  <!-- <header> -->
+    <!-- <div class="upperHeader"> -->
+      <!-- <div class="container"> -->
+        <!-- <ul class="sidebarbg"> -->
+          <form class="logout" action="/session" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
+            <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
+            <li><%= link_to "Logout", users_path %></li>
+          </form>
+        <!-- </ul> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </header> -->
+    </ul>
+    <%= image_tag "sidebar.png", class: "sidebarbg" %>
+  </div>
+  <div class="mainshop">
 
-
-
-<div class="mainshop">
-  <div class="modelwrap">
-   <table>
-    <tr>
-      <div><%= image_tag(@outfit.top.image, class: "top") %></div>
-      <div><%= image_tag(@outfit.pant.image, class: "pant") %></div>
-      <div><%= image_tag(@outfit.shoe.image, class: "shoe") %></div>
-    </tr>
-   </table>
+    <div class="modelwrap">
+     <table>
+      <tr>
+        <div class="itemwrap"><%= image_tag(@outfit.top.image, class: "top") %></div>
+        <div class="itemwrap"><%= image_tag(@outfit.pant.image, class: "pant") %></div>
+        <div class="itemwrap"><%= image_tag(@outfit.shoe.image, class: "shoe") %></div>
+      </tr>
+    </table>
   </div>
   <div class="buttonset">
-  <%= button_to 'Next', outfit_path(@outfit.id), class: "splashlink1", method: :get %>
-  <%= button_to 'Wear It', session_path, class: "splashlink2", method: :get %>
+    <%= button_to 'Next', outfit_path(@outfit.id), class: "splashlink1", method: :get %>
+    <%= button_to 'Wear It', session_path, class: "splashlink2", method: :get %>
   </div>
-<!-- <div class="modelwrap"><%= image_tag "model.png", class: "model" %></div> -->
+  <!-- <div class="modelwrap"><%= image_tag "model.png", class: "model" %></div> -->
+  </div>
 </div>
+
 

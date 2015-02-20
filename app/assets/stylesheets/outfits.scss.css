@@ -118,13 +118,6 @@ a.active:link, a.active:visited {
   position: absolute;
   z-index: -1;
 }
-/*.fitting {
-  width: 450px;
-  height: 600px;
-  border: 1px solid black;
-  margin-left: 150px;
-  position: absolute;
-}*/
 .modelwrap {
   margin-left: 320px;
   width: 250px;
@@ -134,20 +127,22 @@ a.active:link, a.active:visited {
   margin-top: 40px;
   height: 600px;
 }
-/*.modelwrap .top {
-  top: 0px;
+.modelwrap .itemwrap {
+  width: 200px;
   z-index: 1;
 }
-.modelwrap .pant {
-  top: 0px;
+.modelwrap .itemwrap .top {
+  width: 150px;
   z-index: 2;
 }
-.modelwrap .shoe {
-  top: 0px;
-  z-index: 3;
+.modelwrap .itemwrap .pant {
+  width: 150px;
+  z-index: 2;
 }
-*/
-
-.topcont {
-  width: 200px;
+.modelwrap .itemwrap .shoe {
+  width: 150px;
+  z-index: 2;
+}
+.logout {
+  list-style: none;
 }
