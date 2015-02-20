@@ -18,7 +18,7 @@ class SessionController < ApplicationController
   # end
 def show
    @user = User.find_by(id: session[:user_id])
-   @outfit = @user.outfits.first
+   @outfit = @user.outfits
 end
 
   def create
