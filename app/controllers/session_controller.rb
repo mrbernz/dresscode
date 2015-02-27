@@ -2,7 +2,6 @@ class SessionController < ApplicationController
   def new
     render :new
   end
-
   # def create
   #   if params[:password] == Rails.application.secrets.secret_password # find_by(password_digest: params[:password])
   #     session[:valid_user] = true

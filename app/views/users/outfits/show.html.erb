@@ -2,19 +2,11 @@
   <div class="sidebar">
     <ul>
       <%= link_to "Closet", outfits_path %>
-  <!-- <header> -->
-    <!-- <div class="upperHeader"> -->
-      <!-- <div class="container"> -->
-        <!-- <ul class="sidebarbg"> -->
           <form class="logout" action="/session" method="POST">
             <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
             <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
             <li><%= link_to "Logout", users_path %></li>
           </form>
-        <!-- </ul> -->
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </header> -->
     </ul>
     <%= image_tag "sidebar.png", class: "sidebarbg" %>
   </div>
