@@ -1,21 +1,21 @@
-<div id="maincontainer">
-  <div class="row">
-  <!-- <%= image_tag "background.png", class: "col-md-12 background" %> -->
-  </div>
+<html>
+<body>
+  <div id="maincontainer">
     <header>
-    <div class="upperHeader">
-      <div class="container">
-        <ul class="pull-right inline">
-          <form action="/session" method="POST">
-            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
-            <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
-            <li><%= link_to "Logout", users_path, class: "invarseColor" %></li>
-          </form>
-        </ul>
+      <div class="upperHeader">
+        <div class="container">
+          <ul class="pull-right inline">
+            <form action="/session" method="POST">
+              <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
+              <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
+              <li><%= link_to "Logout", users_path, class: "invarseColor" %></li>
+            </form>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
-  <%= button_to "WHAT TO WEAR", outfit_path(@outfit), class: "splashlink1", method: :get %>
-  <%= button_to "CLOSET", outfits_path, class: "splashlink2", method: :get %>
-</div>
-
+    </header>
+    <%= button_to "WHAT TO WEAR", outfit_path(@outfit), class: "splashlink1", method: :get %>
+    <%= button_to "CLOSET", outfits_path, class: "splashlink2", method: :get %>
+  </div>
+</body>
+</html>
