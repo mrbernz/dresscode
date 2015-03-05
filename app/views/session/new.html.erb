@@ -1,23 +1,22 @@
-<html>
-<body>
-  <div id="maincontainer">
-    <header>
-      <div class="upperHeader">
-        <div class="container">
-          <ul class="pull-right inline">
-            <li class="divider-vertical"></li>
-          </ul>
-        </div>
+<div id="maincontainer">
+<div class="row">
+  <%= image_tag "background.png", class: "col-md-12 background" %>
+</div>
+  <header>
+    <div class="upperHeader">
+      <div class="container">
+        <ul class="pull-right inline">
+          <li class="divider-vertical"></li>
+        </ul>
       </div>
-    </header>
-    <div class="login">
+    </div>
+  </header>
+  <div class="login">
       <form method="POST" action = "/session">
         <input type = "email" name = "email" placeholder="Email">
         <input type = "password" name = "password" placeholder="Password">
         <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>"><br>
         <button class="button">Log in</button>
-      </form>
-    </div>
+  </form>
   </div>
-</body>
-</html>
+</div>
