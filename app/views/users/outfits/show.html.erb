@@ -1,6 +1,7 @@
 <div id="maincontainer">
   <div class="sidebar">
     <ul>
+    <%= image_tag "sidebar.png", class: "sidebarbg" %>
       <%= link_to "Closet", outfits_path %>
           <form class="logout" action="/session" method="POST">
             <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token() %>">
@@ -8,7 +9,6 @@
             <li><%= link_to "Logout", users_path %></li>
           </form>
     </ul>
-    <%= image_tag "sidebar.png", class: "sidebarbg" %>
   </div>
   <div class="mainshop">
 
