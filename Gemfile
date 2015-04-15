@@ -6,7 +6,7 @@ source "https://rubygems.org"
 gem 'rails', '4.2.0'
 gem 'pry-rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -42,6 +42,14 @@ gem 'rails-erd'
 
 # Rename your rails application
 gem 'rails-rename', '~> 1.0.0'
+
+gem 'queue_classic', '~> 3.1.0'
+
+# gem 'pg_search', '~> 0.7.9'
+
+# gem 'texticle', '~> 2.2.0'
+
+# gem 'rails_12factor', group: :production
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

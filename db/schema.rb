@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150215192501) do
+ActiveRecord::Schema.define(version: 20150415184416) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "outfits", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -33,6 +36,19 @@ ActiveRecord::Schema.define(version: 20150215192501) do
     t.text     "season"
     t.integer  "user_id"
   end
+
+  create_table "queue_classic_jobs", force: :cascade do |t|
+    t.string   "q_name"
+    t.string   "method"
+    t.text     "args"
+    t.datetime "locked_at"
+    t.datetime "created_at",   default: "now()"
+    t.integer  "locked_by"
+    t.datetime "scheduled_at", default: "now()"
+  end
+
+  add_index "queue_classic_jobs", ["id"], name: "index_queue_classic_jobs_on_id", using: :btree
+  add_index "queue_classic_jobs", ["scheduled_at", "id"], name: "idx_qc_on_scheduled_at_only_unlocked", where: "(locked_at IS NULL)", using: :btree
 
   create_table "shoes", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -65,4 +81,11 @@ ActiveRecord::Schema.define(version: 20150215192501) do
     t.text     "password_digest"
   end
 
+  add_foreign_key "outfits", "pants"
+  add_foreign_key "outfits", "shoes"
+  add_foreign_key "outfits", "tops"
+  add_foreign_key "outfits", "users"
+  add_foreign_key "pants", "users"
+  add_foreign_key "shoes", "users"
+  add_foreign_key "tops", "users"
 end
