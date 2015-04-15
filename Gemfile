@@ -49,7 +49,7 @@ gem 'queue_classic', '~> 3.1.0'
 
 # gem 'texticle', '~> 2.2.0'
 
-# gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
