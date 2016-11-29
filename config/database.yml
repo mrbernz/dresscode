@@ -2,16 +2,18 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  
+
 development:
   <<: *default
   host: localhost
   database: dresscode_dev
+  username: dresscode_dev
 
 test:
   <<: *default
+  host: localhost
   database: dresscode_test
 
 production:
   <<: *default
-  database: drescoode
+  database: drescoode_production

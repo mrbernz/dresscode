@@ -24,7 +24,6 @@ gem 'queue_classic', '~> 3.1.0'
 # gem 'texticle', '~> 2.2.0'
 gem 'puma'
 gem 'foreman'
-gem 'pg'
 
 group :development, :test do
   gem 'byebug'
@@ -33,5 +32,6 @@ group :development, :test do
 end
 
 group :production do
+  gem 'pg'
   gem 'rails_12factor'
 end
