@@ -1,0 +1,588 @@
+/* line 5, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+html,
+body {
+  color: #777;
+  font-size: 12px;
+  line-height: auto;
+  font-family: 'Open Sans', Tahoma, Arial sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+/* line 15, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+a {
+  color: #f16325;
+}
+
+/* line 18, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+a:hover, a:active {
+  color: #f16325;
+  text-decoration: underline;
+}
+
+/* line 22, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+a.invarseColor:link, a.invarseColor:visited {
+  color: #666;
+}
+
+/* line 25, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+a.invarseColor:hover, a.invarseColor:active {
+  color: #f16325;
+  text-decoration: none;
+}
+
+/* line 29, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+a.active:link, a.active:visited {
+  color: #f16325;
+  cursor: default;
+}
+
+/* line 33, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+#mainContainer {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* line 39, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.background {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 47, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.upperHeader {
+  padding-top: 4px;
+}
+
+/* line 50, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.upperHeader select.upper-nav {
+  display: none;
+}
+
+/* line 53, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.upperHeader .inline {
+  margin: -2px 0 0 0;
+  padding: 0;
+}
+
+/* line 57, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.upperHeader .inline li {
+  margin: 0 0 0 5px;
+  padding: 0;
+  display: inline;
+}
+
+/* line 62, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.upperHeader .inline li a {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+/* line 68, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.upperHeader > p, header p {
+  font-size: 11px;
+}
+
+/* line 71, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.center-block {
+  float: none;
+}
+
+/* line 74, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.buttonset {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+/* line 79, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.splashlink1 {
+  width: 200px;
+  height: 50px;
+  color: #777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 320px;
+}
+
+/* line 87, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.splashlink2 {
+  width: 200px;
+  height: 50px;
+  color: #777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* line 95, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.splashlink1:hover,
+.splashlink2:hover {
+  color: #f16325;
+}
+
+/* line 99, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.sidebar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  float: left;
+  position: absolute;
+}
+
+/* line 107, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.sidebar ul {
+  margin-top: 50px;
+}
+
+/* line 110, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.sidebar ul a li {
+  list-style: none;
+}
+
+/* line 113, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.sidebarbg {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 121, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.modelwrap {
+  margin-left: 320px;
+  width: 250px;
+}
+
+/* line 125, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.model {
+  z-index: 0;
+  margin-top: 40px;
+  height: 600px;
+}
+
+/* line 130, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.modelwrap .itemwrap {
+  width: 200px;
+  z-index: 1;
+}
+
+/* line 134, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.modelwrap .itemwrap .top {
+  width: 150px;
+  z-index: 2;
+}
+
+/* line 138, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.modelwrap .itemwrap .pant {
+  width: 150px;
+  z-index: 2;
+}
+
+/* line 142, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.modelwrap .itemwrap .shoe {
+  width: 150px;
+  z-index: 2;
+}
+
+/* line 146, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/outfits.css.scss */
+.logout {
+  list-style: none;
+}
+/* line 1, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+html,
+body {
+  color: #777;
+  font-size: 12px;
+  line-height: auto;
+  font-family: 'Open Sans', Tahoma, Arial sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+/* line 15, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+a {
+  color: #f16325;
+}
+
+/* line 18, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+a:hover, a:active {
+  color: #f16325;
+  text-decoration: underline;
+}
+
+/* line 22, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+a.invarseColor:link, a.invarseColor:visited {
+  color: #666;
+}
+
+/* line 25, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+a.invarseColor:hover, a.invarseColor:active {
+  color: #f16325;
+  text-decoration: none;
+}
+
+/* line 29, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+a.active:link, a.active:visited {
+  color: #f16325;
+  cursor: default;
+}
+
+/* line 33, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+#mainContainer {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* line 39, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.background {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 47, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.upperHeader {
+  padding-top: 4px;
+}
+
+/* line 50, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.upperHeader select.upper-nav {
+  display: none;
+}
+
+/* line 53, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.upperHeader .inline {
+  margin: -2px 0 0 0;
+  padding: 0;
+}
+
+/* line 57, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.upperHeader .inline li {
+  margin: 0 0 0 5px;
+  padding: 0;
+  display: inline;
+}
+
+/* line 62, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.upperHeader .inline li a {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+/* line 68, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.upperHeader > p, header p {
+  font-size: 11px;
+}
+
+/* line 71, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.center-block {
+  float: none;
+}
+
+/* line 74, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.splashlink1, .login {
+  width: 200px;
+  height: 50px;
+  color: #777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 320px;
+}
+
+/* line 82, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.splashlink2 {
+  width: 200px;
+  height: 50px;
+  color: #777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* line 90, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.splashlink1:hover,
+.splashlink2:hover {
+  color: #f16325;
+}
+
+/* line 94, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.login {
+  height: auto;
+  margin-top: center;
+  margin-left: center;
+}
+
+/* line 99, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.login input {
+  height: auto;
+  line-height: 20px;
+  width: 200px;
+}
+
+/* line 104, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/session.css.scss */
+.login button {
+  height: auto;
+  line-height: 20px;
+  width: 200px;
+}
+/* line 4, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+html,
+body {
+  color: #777;
+  font-size: 12px;
+  line-height: auto;
+  font-family: 'Open Sans', Tahoma, Arial sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+/* line 14, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+a {
+  color: #f16325;
+}
+
+/* line 17, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+a:hover, a:active {
+  color: #f16325;
+  text-decoration: underline;
+}
+
+/* line 21, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+a.invarseColor:link, a.invarseColor:visited {
+  color: #666;
+}
+
+/* line 24, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+a.invarseColor:hover, a.invarseColor:active {
+  color: #f16325;
+  text-decoration: none;
+}
+
+/* line 28, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+a.active:link, a.active:visited {
+  color: #f16325;
+  cursor: default;
+}
+
+/* line 32, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+#mainContainer {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* line 38, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.background {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 46, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.upperHeader {
+  padding-top: 4px;
+}
+
+/* line 49, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.upperHeader select.upper-nav {
+  display: none;
+}
+
+/* line 52, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.upperHeader .inline {
+  margin: -2px 0 0 0;
+  padding: 0;
+}
+
+/* line 56, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.upperHeader .inline li {
+  margin: 0 0 0 5px;
+  padding: 0;
+  display: inline;
+}
+
+/* line 61, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.upperHeader .inline li a {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+/* line 67, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.upperHeader > p, header p {
+  font-size: 11px;
+}
+
+/* line 70, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.center-block {
+  float: none;
+}
+
+/* line 73, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.splashlink1 {
+  width: 200px;
+  height: 50px;
+  color: #777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 320px;
+}
+
+/* line 81, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.splashlink2 {
+  width: 200px;
+  height: 50px;
+  color: #777;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* line 89, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.splashlink1:hover,
+.splashlink2:hover {
+  color: #f16325;
+}
+
+/* line 93, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.create {
+  height: auto;
+  margin-top: 25%;
+  margin-left: 44%;
+}
+
+/* line 98, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.create input {
+  height: auto;
+  line-height: 20px;
+  width: 200px;
+}
+
+/* line 103, /Users/BernzAir/Documents/Dev/wdi/peach projects/dresscode/app/assets/stylesheets/users.css.scss */
+.create button {
+  height: auto;
+  line-height: 20px;
+  width: 200px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
