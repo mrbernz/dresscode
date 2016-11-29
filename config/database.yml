@@ -1,15 +1,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: dresscode_development
+  database: dresscode_dev
   pool: 5
-  username: BernzAir
-  password:
 
 test:
   adapter: postgresql
   encoding: unicode
   database: dresscode_test
   pool: 5
-  username: BernzAir
-  password:
