@@ -1,1 +1,1 @@
-ENV["DATABASE_URL"] = "postgres://localhost/dresscode_development"
+ENV["DATABASE_URL"] = "postgres://localhost/dresscode_dev"

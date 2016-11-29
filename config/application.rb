@@ -24,5 +24,6 @@ module Dresscode
     config.active_record.raise_in_transactional_callbacks = true
 
     config.active_job.queue_adapter = :queue_classic
+    config.assets.initialize_on_precompile = false
   end
 end
