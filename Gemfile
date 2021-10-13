@@ -22,7 +22,7 @@ gem 'rails-rename', '~> 1.0.0'
 gem 'queue_classic', '~> 3.1.0'
 # gem 'pg_search', '~> 0.7.9'
 # gem 'texticle', '~> 2.2.0'
-gem 'puma'
+gem 'puma', '>= 4.3.9'
 gem 'foreman'
 
 group :development, :test do
